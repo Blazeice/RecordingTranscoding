@@ -15,20 +15,21 @@
 @implementation BlazeiceViewController{
     UIView *_buttomview;
     NSString *_lastVedio;
-    NSTimer *_playerTimer;//监测播放完成
+    AVAudioPlayer *_tempPlayer;
+    NSTimer *_playerTimer;
+    UILabel *_label;
 
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.view setBackgroundColor:VIEW_BACKGROND_COLOR];
     [self bgView];
     
 }
 //底部录音
 -(void)bgView{
-    if (!_buttomview) {
-        _buttomview = [[UIView alloc] initWithFrame:CGRectMake(0, 10, V_S_W, 44)];
+        _buttomview = [[UIView alloc] initWithFrame:CGRectMake(0, 100, V_S_W, 44)];
         [_buttomview setBackgroundColor:[UIColor whiteColor]];
         _buttomview.userInteractionEnabled = YES;
         
@@ -50,10 +51,24 @@
         [recordButton addSubview:imageView];
         [recordButton addSubview:addRecordLabel];
         [_buttomview addSubview:recordButton];
+        [self.view addSubview:_buttomview];
+
+}
+-(void)alertTextLabel:(BOOL)show{
+    if (!_label) {
+        _label = [[UILabel alloc] initWithFrame:CGRectMake(0, _buttomview.frame.size.height+_buttomview.frame.origin.y, V_S_W, 100)];
+        [_label setText:@"点击绿色圆圈开始录音/停止录音\n 完成录音时,点击完成方可完成录音，如果此时继续点击圆圈，则继续录音并与之前录音进行拼接"];
+        [_label setNumberOfLines:0];
+    }
+    if (show) {
+        [self.view addSubview:_label];
+    }else{
+        [_label removeFromSuperview];
     }
 }
 // 录音开始
 -(void)recordAction{
+    [self alertTextLabel:YES];
     if (![BlazeicePublicMethod checkRecordPermission]) {
         return;
     }
@@ -65,12 +80,12 @@
 }
 #pragma mark - recordDelegate
 -(void)recodeComplete:(NSString *)vedioPathString{
+    [self alertTextLabel:NO];
     UIView *recordView = [self.view.window viewWithTag:1121];
     [recordView removeFromSuperview];
     if (![BlazeicePublicMethod stringIsClassNull:vedioPathString]) {
         _lastVedio = [NSString stringWithFormat:@"%@",vedioPathString];
         UIButton *addRecordButton = (UIButton*)[_buttomview viewWithTag:1122];
-        [_buttomview setFrame:CGRectMake(0, _buttomview.frame.origin.y, V_S_W, 152)];
         addRecordButton.hidden = YES;
         
         UIButton *playbtn=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -124,20 +139,20 @@
         UIButton *audioPlayButton = (UIButton*)[_buttomview viewWithTag:1100];
         UIImageView *animationView = (UIImageView*)[audioPlayButton viewWithTag:101];
         [animationView startAnimating];
+        
         if (_playerTimer) {
             [_playerTimer invalidate];
             _playerTimer=nil;
         }
         
-        [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];//开启红外感应
-        [[LZXAppDelegate sharedAppDelegate] toSetAudio:[LZXPublicMethod getPathByFileName:lastVedio ofType:@"wav"] andGround:backMusic];
+        NSURL *tempUrl = [NSURL URLWithString:[[BlazeicePublicMethod getPathByFileName:_lastVedio ofType:@"wav"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        _tempPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:tempUrl error:nil];
         
-        //播放停止时背景音停止
-        NSURL *tempUrl = [NSURL URLWithString:[[LZXPublicMethod getPathByFileName:lastVedio ofType:@"wav"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-        AVAudioPlayer *tempPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:tempUrl error:nil];
-        NSTimeInterval vedioTime = tempPlayer.duration+0.1;
+        [_tempPlayer play];
+        NSTimeInterval vedioTime = _tempPlayer.duration+0.1;
+        
         //播放完成时 停止
-        playerTimer=[NSTimer scheduledTimerWithTimeInterval:vedioTime target:self selector:@selector(stopPlay) userInfo:nil repeats:NO];
+        _playerTimer=[NSTimer scheduledTimerWithTimeInterval:vedioTime target:self selector:@selector(stopPlay) userInfo:nil repeats:NO];
         [animationView startAnimating];
         UInt32 overried=kAudioSessionOverrideAudioRoute_Speaker;
         if ([[UIDevice currentDevice] proximityState]==YES) {
@@ -149,29 +164,36 @@
         AudioSessionSetProperty(kAudioSessionProperty_OverrideAudioRoute, sizeof(overried),&overried);
     }
 }
+//删除整个语音
+-(void)deleteallVedio
+{
+    _buttomview = nil;
+    [self bgView];
+    [self stopPlay];
+    //也要将本地这条语音删除
+    [self deleteVedio];
+}
+//删除音频
+-(void)deleteVedio
+{
+    NSString *pathString=[BlazeicePublicMethod getPathByFileName:_lastVedio ofType:@"wav"];
+    NSString *vedioAmr=[BlazeicePublicMethod getPathByFileName:[_lastVedio stringByAppendingString:@"wavToAmr"] ofType:@"amr"];
+    [BlazeicePublicMethod deleteFileAtPath:pathString];
+    [BlazeicePublicMethod deleteFileAtPath:vedioAmr];
+    _lastVedio=nil;
+}
 //停止播放
 -(void)stopPlay
 {
-    if (playerTimer) {
-        [playerTimer invalidate];
-        playerTimer=nil;
+    if (_playerTimer) {
+        [_playerTimer invalidate];
+        _playerTimer=nil;
     }
-    for (UIButton*btn in bgVedioScroll.subviews) {
-        btn.userInteractionEnabled=YES;
-    }
-    UIButton *audioPlayButton = (UIButton*)[buttomview viewWithTag:1100];
+
+    UIButton *audioPlayButton = (UIButton*)[_buttomview viewWithTag:1100];
     UIImageView *animationView = (UIImageView*)[audioPlayButton viewWithTag:101];
-    [animationView startAnimating];
+    [animationView stopAnimating];
     [[UIDevice currentDevice] setProximityMonitoringEnabled:NO];
-    [[LZXAppDelegate sharedAppDelegate] stopPlayAudio];
 }
-//切换耳机时 重新播放
--(void)playAgain:(NSNotification *)noti
-{
-    if ([[LZXAppDelegate sharedAppDelegate] isPlaying]) {
-        [self playVedio];
-    }else{
-        [self stopPlay];
-    }
-}
+
 @end

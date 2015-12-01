@@ -24,6 +24,7 @@
 #define DEFAULT_GREEN_COLOR  RGB(26, 188, 156, 1.0f)
 #define defaultColor [UIColor colorWithRed:240/255.0 green:239/255.0 blue:237/255.0 alpha:1.0]
 #define CHAR_GRAY_COLOR [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1]
+#define VIEW_BACKGROND_COLOR [UIColor colorWithRed:240/255.0 green:239/255.0 blue:237/255.0 alpha:1.0]
 
 //字体设置
 #define BIGEST_TITLE_FONT        [UIFont boldSystemFontOfSize:24.0]      //大号标题

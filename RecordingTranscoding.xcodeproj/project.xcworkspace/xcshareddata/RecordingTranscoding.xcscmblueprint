@@ -1,4 +1,5 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D4F807B7C2890321875F413A4F2DA643B2DDC118",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++3220" : {
 
@@ -8,11 +9,13 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D4F807B7C2890321875F413A4F2DA643B2DDC118" : 0,
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++3220" : 0,
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++5109" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ADCF8F9C-6174-4A42-AEF3-10A71CD367F2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D4F807B7C2890321875F413A4F2DA643B2DDC118" : "RecordingTranscoding\/",
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++3220" : "RecordingTranscoding\/lexueRead\/thirdpackage\/VoiceConvert\/",
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++5109" : "RecordingTranscoding\/lexueRead\/thirdpackage\/VoiceRecorderVC\/"
   },
@@ -20,6 +23,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RecordingTranscoding.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Blazeice\/RecordingTranscoding.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D4F807B7C2890321875F413A4F2DA643B2DDC118"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.0.240\/repository",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",

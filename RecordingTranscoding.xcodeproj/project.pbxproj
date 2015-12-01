@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621C22451C0DA01600C2DD98 /* recordAudio_recording@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22351C0DA01600C2DD98 /* recordAudio_recording@2x.png */; };
+		621C22461C0DA01600C2DD98 /* audio_Green_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22361C0DA01600C2DD98 /* audio_Green_4@2x.png */; };
+		621C22471C0DA01600C2DD98 /* recordAudio_voice2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22371C0DA01600C2DD98 /* recordAudio_voice2@2x.png */; };
+		621C22481C0DA01600C2DD98 /* audio_Green_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22381C0DA01600C2DD98 /* audio_Green_3@2x.png */; };
+		621C22491C0DA01600C2DD98 /* recordAudio_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22391C0DA01600C2DD98 /* recordAudio_record@2x.png */; };
+		621C224A1C0DA01600C2DD98 /* recordAudio_voice1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C223A1C0DA01600C2DD98 /* recordAudio_voice1@2x.png */; };
+		621C224B1C0DA01600C2DD98 /* recordAudio_voice5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C223B1C0DA01600C2DD98 /* recordAudio_voice5@2x.png */; };
+		621C224C1C0DA01600C2DD98 /* audio_Green_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C223C1C0DA01600C2DD98 /* audio_Green_2@2x.png */; };
+		621C224D1C0DA01600C2DD98 /* recordAudio_voice4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C223D1C0DA01600C2DD98 /* recordAudio_voice4@2x.png */; };
+		621C224E1C0DA01600C2DD98 /* audio_Green_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C223E1C0DA01600C2DD98 /* audio_Green_1@2x.png */; };
+		621C224F1C0DA01600C2DD98 /* recordAudio_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C223F1C0DA01600C2DD98 /* recordAudio_bg@2x.png */; };
+		621C22501C0DA01600C2DD98 /* delete_audio.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22401C0DA01600C2DD98 /* delete_audio.png */; };
+		621C22511C0DA01600C2DD98 /* record_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22411C0DA01600C2DD98 /* record_image@2x.png */; };
+		621C22521C0DA01600C2DD98 /* recordAudio_voice3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22421C0DA01600C2DD98 /* recordAudio_voice3@2x.png */; };
+		621C22531C0DA01600C2DD98 /* recordComplete_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22431C0DA01600C2DD98 /* recordComplete_press.png */; };
+		621C22541C0DA01600C2DD98 /* recordComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = 621C22441C0DA01600C2DD98 /* recordComplete.png */; };
 		62A05CE017C36AEB005D5E5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05CDF17C36AEB005D5E5F /* UIKit.framework */; };
 		62A05CE217C36AEB005D5E5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05CE117C36AEB005D5E5F /* Foundation.framework */; };
 		62A05CE417C36AEB005D5E5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05CE317C36AEB005D5E5F /* CoreGraphics.framework */; };
@@ -46,6 +62,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		621C22351C0DA01600C2DD98 /* recordAudio_recording@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_recording@2x.png"; sourceTree = "<group>"; };
+		621C22361C0DA01600C2DD98 /* audio_Green_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio_Green_4@2x.png"; sourceTree = "<group>"; };
+		621C22371C0DA01600C2DD98 /* recordAudio_voice2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_voice2@2x.png"; sourceTree = "<group>"; };
+		621C22381C0DA01600C2DD98 /* audio_Green_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio_Green_3@2x.png"; sourceTree = "<group>"; };
+		621C22391C0DA01600C2DD98 /* recordAudio_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_record@2x.png"; sourceTree = "<group>"; };
+		621C223A1C0DA01600C2DD98 /* recordAudio_voice1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_voice1@2x.png"; sourceTree = "<group>"; };
+		621C223B1C0DA01600C2DD98 /* recordAudio_voice5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_voice5@2x.png"; sourceTree = "<group>"; };
+		621C223C1C0DA01600C2DD98 /* audio_Green_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio_Green_2@2x.png"; sourceTree = "<group>"; };
+		621C223D1C0DA01600C2DD98 /* recordAudio_voice4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_voice4@2x.png"; sourceTree = "<group>"; };
+		621C223E1C0DA01600C2DD98 /* audio_Green_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio_Green_1@2x.png"; sourceTree = "<group>"; };
+		621C223F1C0DA01600C2DD98 /* recordAudio_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_bg@2x.png"; sourceTree = "<group>"; };
+		621C22401C0DA01600C2DD98 /* delete_audio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_audio.png; sourceTree = "<group>"; };
+		621C22411C0DA01600C2DD98 /* record_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record_image@2x.png"; sourceTree = "<group>"; };
+		621C22421C0DA01600C2DD98 /* recordAudio_voice3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordAudio_voice3@2x.png"; sourceTree = "<group>"; };
+		621C22431C0DA01600C2DD98 /* recordComplete_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordComplete_press.png; sourceTree = "<group>"; };
+		621C22441C0DA01600C2DD98 /* recordComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordComplete.png; sourceTree = "<group>"; };
 		62A05CDC17C36AEB005D5E5F /* RecordingTranscoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordingTranscoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A05CDF17C36AEB005D5E5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		62A05CE117C36AEB005D5E5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +160,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621C22321C0D9E8900C2DD98 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				62CF03C51C0D7A71002C76D0 /* BlazeiceAudioRecordView.h */,
+				62CF03C61C0D7A71002C76D0 /* BlazeiceAudioRecordView.m */,
+				62D671921C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.h */,
+				62D671931C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m */,
+			);
+			name = Recording;
+			sourceTree = "<group>";
+		};
+		621C22331C0D9E9F00C2DD98 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				62D671901C0C4CBB00450BE9 /* BlazeiceAppDelegate.h */,
+				62D671911C0C4CBB00450BE9 /* BlazeiceAppDelegate.m */,
+				62D671961C0C4CBB00450BE9 /* BlazeiceViewController.h */,
+				62D671971C0C4CBB00450BE9 /* BlazeiceViewController.m */,
+			);
+			name = demo;
+			sourceTree = "<group>";
+		};
+		621C22341C0D9EAD00C2DD98 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				62D671941C0C4CBB00450BE9 /* BlazeicePublicMethod.h */,
+				62D671951C0C4CBB00450BE9 /* BlazeicePublicMethod.m */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
 		62A05CD317C36AEB005D5E5F = {
 			isa = PBXGroup;
 			children = (
@@ -162,16 +225,9 @@
 		62D6718F1C0C4CBB00450BE9 /* RecordingTranscoding */ = {
 			isa = PBXGroup;
 			children = (
-				62D671901C0C4CBB00450BE9 /* BlazeiceAppDelegate.h */,
-				62D671911C0C4CBB00450BE9 /* BlazeiceAppDelegate.m */,
-				62D671921C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.h */,
-				62D671931C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m */,
-				62D671941C0C4CBB00450BE9 /* BlazeicePublicMethod.h */,
-				62D671951C0C4CBB00450BE9 /* BlazeicePublicMethod.m */,
-				62D671961C0C4CBB00450BE9 /* BlazeiceViewController.h */,
-				62D671971C0C4CBB00450BE9 /* BlazeiceViewController.m */,
-				62CF03C51C0D7A71002C76D0 /* BlazeiceAudioRecordView.h */,
-				62CF03C61C0D7A71002C76D0 /* BlazeiceAudioRecordView.m */,
+				621C22341C0D9EAD00C2DD98 /* public */,
+				621C22331C0D9E9F00C2DD98 /* demo */,
+				621C22321C0D9E8900C2DD98 /* Recording */,
 				62D671E81C0C4CC900450BE9 /* Supporting Files */,
 				62D671A01C0C4CBB00450BE9 /* thirdpackage */,
 			);
@@ -279,6 +335,22 @@
 			isa = PBXGroup;
 			children = (
 				62D671981C0C4CBB00450BE9 /* Default-568h@2x.png */,
+				621C22351C0DA01600C2DD98 /* recordAudio_recording@2x.png */,
+				621C22361C0DA01600C2DD98 /* audio_Green_4@2x.png */,
+				621C22371C0DA01600C2DD98 /* recordAudio_voice2@2x.png */,
+				621C22381C0DA01600C2DD98 /* audio_Green_3@2x.png */,
+				621C22391C0DA01600C2DD98 /* recordAudio_record@2x.png */,
+				621C223A1C0DA01600C2DD98 /* recordAudio_voice1@2x.png */,
+				621C223B1C0DA01600C2DD98 /* recordAudio_voice5@2x.png */,
+				621C223C1C0DA01600C2DD98 /* audio_Green_2@2x.png */,
+				621C223D1C0DA01600C2DD98 /* recordAudio_voice4@2x.png */,
+				621C223E1C0DA01600C2DD98 /* audio_Green_1@2x.png */,
+				621C223F1C0DA01600C2DD98 /* recordAudio_bg@2x.png */,
+				621C22401C0DA01600C2DD98 /* delete_audio.png */,
+				621C22411C0DA01600C2DD98 /* record_image@2x.png */,
+				621C22421C0DA01600C2DD98 /* recordAudio_voice3@2x.png */,
+				621C22431C0DA01600C2DD98 /* recordComplete_press.png */,
+				621C22441C0DA01600C2DD98 /* recordComplete.png */,
 				62D671991C0C4CBB00450BE9 /* Default.png */,
 				62D6719A1C0C4CBB00450BE9 /* Default@2x.png */,
 				62D6719B1C0C4CBB00450BE9 /* InfoPlist.strings */,
@@ -347,13 +419,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D671D11C0C4CBB00450BE9 /* Default@2x.png in Resources */,
+				621C224E1C0DA01600C2DD98 /* audio_Green_1@2x.png in Resources */,
 				62D6714C1C0C482900450BE9 /* readme.txt in Resources */,
+				621C22491C0DA01600C2DD98 /* recordAudio_record@2x.png in Resources */,
+				621C224D1C0DA01600C2DD98 /* recordAudio_voice4@2x.png in Resources */,
+				621C22511C0DA01600C2DD98 /* record_image@2x.png in Resources */,
+				621C22471C0DA01600C2DD98 /* recordAudio_voice2@2x.png in Resources */,
+				621C224C1C0DA01600C2DD98 /* audio_Green_2@2x.png in Resources */,
+				621C22531C0DA01600C2DD98 /* recordComplete_press.png in Resources */,
+				621C22501C0DA01600C2DD98 /* delete_audio.png in Resources */,
 				62D671D01C0C4CBB00450BE9 /* Default.png in Resources */,
 				62D671E51C0C4CBB00450BE9 /* opencore-amrwb.pc in Resources */,
+				621C22481C0DA01600C2DD98 /* audio_Green_3@2x.png in Resources */,
+				621C22461C0DA01600C2DD98 /* audio_Green_4@2x.png in Resources */,
 				62D671D41C0C4CBB00450BE9 /* RecordingTranscoding-Info.plist in Resources */,
+				621C224A1C0DA01600C2DD98 /* recordAudio_voice1@2x.png in Resources */,
+				621C224F1C0DA01600C2DD98 /* recordAudio_bg@2x.png in Resources */,
+				621C224B1C0DA01600C2DD98 /* recordAudio_voice5@2x.png in Resources */,
 				62D671CF1C0C4CBB00450BE9 /* Default-568h@2x.png in Resources */,
 				62D671D21C0C4CBB00450BE9 /* InfoPlist.strings in Resources */,
+				621C22451C0DA01600C2DD98 /* recordAudio_recording@2x.png in Resources */,
+				621C22541C0DA01600C2DD98 /* recordComplete.png in Resources */,
 				62D671E41C0C4CBB00450BE9 /* opencore-amrnb.pc in Resources */,
+				621C22521C0DA01600C2DD98 /* recordAudio_voice3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
