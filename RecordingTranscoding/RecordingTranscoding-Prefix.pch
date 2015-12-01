@@ -1,0 +1,35 @@
+//
+// Prefix header for all source files of the 'RecordingTranscoding' target in the 'RecordingTranscoding' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+//屏幕长宽
+#define V_S_W  [[UIScreen mainScreen] bounds].size.width
+#define V_S_H  [[UIScreen mainScreen] bounds].size.height
+
+//颜色设置
+#define RGB(r,g,b,a)  [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
+//字体颜色
+#define DEFAULT_GREEN_COLOR  RGB(26, 188, 156, 1.0f)
+#define defaultColor [UIColor colorWithRed:240/255.0 green:239/255.0 blue:237/255.0 alpha:1.0]
+#define CHAR_GRAY_COLOR [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1]
+
+//字体设置
+#define BIGEST_TITLE_FONT        [UIFont boldSystemFontOfSize:24.0]      //大号标题
+#define BIGER_TITLE_FONT         [UIFont boldSystemFontOfSize:22.0]      //大号标题
+#define BIG_TITLE_FONT           [UIFont boldSystemFontOfSize:20.0]      //大号标题
+#define MEDIUM_TITLE_FONT        [UIFont systemFontOfSize:18]            //中号标题
+#define LITTLE_TITLE_FONT        [UIFont systemFontOfSize:16]            //小号标题/大号内容
+#define CONTENT_FONT             [UIFont systemFontOfSize:14]            //内容
+#define AFFILIATED_CONTENT_FONT  [UIFont systemFontOfSize:12]            //附属内容

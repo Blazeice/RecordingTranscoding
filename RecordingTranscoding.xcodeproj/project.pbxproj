@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62A05CE017C36AEB005D5E5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05CDF17C36AEB005D5E5F /* UIKit.framework */; };
+		62A05CE217C36AEB005D5E5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05CE117C36AEB005D5E5F /* Foundation.framework */; };
+		62A05CE417C36AEB005D5E5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05CE317C36AEB005D5E5F /* CoreGraphics.framework */; };
+		62A05D0317C36BB3005D5E5F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05D0217C36BB3005D5E5F /* CoreAudio.framework */; };
+		62A05D0517C36BBB005D5E5F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05D0417C36BBB005D5E5F /* AVFoundation.framework */; };
+		62A05D0717C36BC4005D5E5F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A05D0617C36BC4005D5E5F /* AudioToolbox.framework */; };
+		62CF03C71C0D7A71002C76D0 /* BlazeiceAudioRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CF03C61C0D7A71002C76D0 /* BlazeiceAudioRecordView.m */; };
+		62D6714C1C0C482900450BE9 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 62D6714B1C0C482900450BE9 /* readme.txt */; };
+		62D671CB1C0C4CBB00450BE9 /* BlazeiceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D671911C0C4CBB00450BE9 /* BlazeiceAppDelegate.m */; };
+		62D671CC1C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D671931C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m */; };
+		62D671CD1C0C4CBB00450BE9 /* BlazeicePublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D671951C0C4CBB00450BE9 /* BlazeicePublicMethod.m */; };
+		62D671CE1C0C4CBB00450BE9 /* BlazeiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D671971C0C4CBB00450BE9 /* BlazeiceViewController.m */; };
+		62D671CF1C0C4CBB00450BE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D671981C0C4CBB00450BE9 /* Default-568h@2x.png */; };
+		62D671D01C0C4CBB00450BE9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D671991C0C4CBB00450BE9 /* Default.png */; };
+		62D671D11C0C4CBB00450BE9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D6719A1C0C4CBB00450BE9 /* Default@2x.png */; };
+		62D671D21C0C4CBB00450BE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62D6719B1C0C4CBB00450BE9 /* InfoPlist.strings */; };
+		62D671D31C0C4CBB00450BE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D6719D1C0C4CBB00450BE9 /* main.m */; };
+		62D671D41C0C4CBB00450BE9 /* RecordingTranscoding-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62D6719E1C0C4CBB00450BE9 /* RecordingTranscoding-Info.plist */; };
+		62D671D51C0C4CBB00450BE9 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D671A31C0C4CBB00450BE9 /* UIView+Animation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		62D671D61C0C4CBB00450BE9 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62D671A71C0C4CBB00450BE9 /* amrFileCodec.mm */; };
+		62D671D71C0C4CBB00450BE9 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62D671A91C0C4CBB00450BE9 /* wav.mm */; };
+		62D671D81C0C4CBB00450BE9 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B21C0C4CBB00450BE9 /* libopencore-amrnb.a */; };
+		62D671D91C0C4CBB00450BE9 /* libopencore-amrnb.a.arm64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B31C0C4CBB00450BE9 /* libopencore-amrnb.a.arm64 */; };
+		62D671DA1C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B41C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7 */; };
+		62D671DB1C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7s in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B51C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7s */; };
+		62D671DC1C0C4CBB00450BE9 /* libopencore-amrnb.a.i386 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B61C0C4CBB00450BE9 /* libopencore-amrnb.a.i386 */; };
+		62D671DD1C0C4CBB00450BE9 /* libopencore-amrnb.a.x86_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B71C0C4CBB00450BE9 /* libopencore-amrnb.a.x86_64 */; };
+		62D671DE1C0C4CBB00450BE9 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B81C0C4CBB00450BE9 /* libopencore-amrwb.a */; };
+		62D671DF1C0C4CBB00450BE9 /* libopencore-amrwb.a.arm64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671B91C0C4CBB00450BE9 /* libopencore-amrwb.a.arm64 */; };
+		62D671E01C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671BA1C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7 */; };
+		62D671E11C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7s in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671BB1C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7s */; };
+		62D671E21C0C4CBB00450BE9 /* libopencore-amrwb.a.i386 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671BC1C0C4CBB00450BE9 /* libopencore-amrwb.a.i386 */; };
+		62D671E31C0C4CBB00450BE9 /* libopencore-amrwb.a.x86_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D671BD1C0C4CBB00450BE9 /* libopencore-amrwb.a.x86_64 */; };
+		62D671E41C0C4CBB00450BE9 /* opencore-amrnb.pc in Resources */ = {isa = PBXBuildFile; fileRef = 62D671BF1C0C4CBB00450BE9 /* opencore-amrnb.pc */; };
+		62D671E51C0C4CBB00450BE9 /* opencore-amrwb.pc in Resources */ = {isa = PBXBuildFile; fileRef = 62D671C01C0C4CBB00450BE9 /* opencore-amrwb.pc */; };
+		62D671E71C0C4CBB00450BE9 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62D671C41C0C4CBB00450BE9 /* VoiceConverter.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62A05CDC17C36AEB005D5E5F /* RecordingTranscoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordingTranscoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A05CDF17C36AEB005D5E5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		62A05CE117C36AEB005D5E5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		62A05CE317C36AEB005D5E5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		62A05D0217C36BB3005D5E5F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		62A05D0417C36BBB005D5E5F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		62A05D0617C36BC4005D5E5F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		62CF03C51C0D7A71002C76D0 /* BlazeiceAudioRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceAudioRecordView.h; sourceTree = "<group>"; };
+		62CF03C61C0D7A71002C76D0 /* BlazeiceAudioRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceAudioRecordView.m; sourceTree = "<group>"; };
+		62D6714B1C0C482900450BE9 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		62D671901C0C4CBB00450BE9 /* BlazeiceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceAppDelegate.h; sourceTree = "<group>"; };
+		62D671911C0C4CBB00450BE9 /* BlazeiceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceAppDelegate.m; sourceTree = "<group>"; };
+		62D671921C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceAudioRecordAndTransCoding.h; sourceTree = "<group>"; };
+		62D671931C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceAudioRecordAndTransCoding.m; sourceTree = "<group>"; };
+		62D671941C0C4CBB00450BE9 /* BlazeicePublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeicePublicMethod.h; sourceTree = "<group>"; };
+		62D671951C0C4CBB00450BE9 /* BlazeicePublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeicePublicMethod.m; sourceTree = "<group>"; };
+		62D671961C0C4CBB00450BE9 /* BlazeiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceViewController.h; sourceTree = "<group>"; };
+		62D671971C0C4CBB00450BE9 /* BlazeiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceViewController.m; sourceTree = "<group>"; };
+		62D671981C0C4CBB00450BE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		62D671991C0C4CBB00450BE9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		62D6719A1C0C4CBB00450BE9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		62D6719C1C0C4CBB00450BE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		62D6719D1C0C4CBB00450BE9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62D6719E1C0C4CBB00450BE9 /* RecordingTranscoding-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RecordingTranscoding-Info.plist"; sourceTree = "<group>"; };
+		62D6719F1C0C4CBB00450BE9 /* RecordingTranscoding-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordingTranscoding-Prefix.pch"; sourceTree = "<group>"; };
+		62D671A21C0C4CBB00450BE9 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		62D671A31C0C4CBB00450BE9 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		62D671A61C0C4CBB00450BE9 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		62D671A71C0C4CBB00450BE9 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		62D671A81C0C4CBB00450BE9 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		62D671A91C0C4CBB00450BE9 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		62D671AC1C0C4CBB00450BE9 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		62D671AD1C0C4CBB00450BE9 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		62D671AF1C0C4CBB00450BE9 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		62D671B01C0C4CBB00450BE9 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		62D671B21C0C4CBB00450BE9 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		62D671B31C0C4CBB00450BE9 /* libopencore-amrnb.a.arm64 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a.arm64"; sourceTree = "<group>"; };
+		62D671B41C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a.armv7"; sourceTree = "<group>"; };
+		62D671B51C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7s */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a.armv7s"; sourceTree = "<group>"; };
+		62D671B61C0C4CBB00450BE9 /* libopencore-amrnb.a.i386 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a.i386"; sourceTree = "<group>"; };
+		62D671B71C0C4CBB00450BE9 /* libopencore-amrnb.a.x86_64 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a.x86_64"; sourceTree = "<group>"; };
+		62D671B81C0C4CBB00450BE9 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		62D671B91C0C4CBB00450BE9 /* libopencore-amrwb.a.arm64 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a.arm64"; sourceTree = "<group>"; };
+		62D671BA1C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a.armv7"; sourceTree = "<group>"; };
+		62D671BB1C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7s */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a.armv7s"; sourceTree = "<group>"; };
+		62D671BC1C0C4CBB00450BE9 /* libopencore-amrwb.a.i386 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a.i386"; sourceTree = "<group>"; };
+		62D671BD1C0C4CBB00450BE9 /* libopencore-amrwb.a.x86_64 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a.x86_64"; sourceTree = "<group>"; };
+		62D671BF1C0C4CBB00450BE9 /* opencore-amrnb.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "opencore-amrnb.pc"; sourceTree = "<group>"; };
+		62D671C01C0C4CBB00450BE9 /* opencore-amrwb.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "opencore-amrwb.pc"; sourceTree = "<group>"; };
+		62D671C31C0C4CBB00450BE9 /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		62D671C41C0C4CBB00450BE9 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62A05CD917C36AEB005D5E5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D671DC1C0C4CBB00450BE9 /* libopencore-amrnb.a.i386 in Frameworks */,
+				62A05D0717C36BC4005D5E5F /* AudioToolbox.framework in Frameworks */,
+				62A05D0517C36BBB005D5E5F /* AVFoundation.framework in Frameworks */,
+				62D671DB1C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7s in Frameworks */,
+				62A05D0317C36BB3005D5E5F /* CoreAudio.framework in Frameworks */,
+				62D671E21C0C4CBB00450BE9 /* libopencore-amrwb.a.i386 in Frameworks */,
+				62D671E01C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7 in Frameworks */,
+				62D671DE1C0C4CBB00450BE9 /* libopencore-amrwb.a in Frameworks */,
+				62D671DF1C0C4CBB00450BE9 /* libopencore-amrwb.a.arm64 in Frameworks */,
+				62A05CE017C36AEB005D5E5F /* UIKit.framework in Frameworks */,
+				62D671D81C0C4CBB00450BE9 /* libopencore-amrnb.a in Frameworks */,
+				62A05CE217C36AEB005D5E5F /* Foundation.framework in Frameworks */,
+				62A05CE417C36AEB005D5E5F /* CoreGraphics.framework in Frameworks */,
+				62D671DD1C0C4CBB00450BE9 /* libopencore-amrnb.a.x86_64 in Frameworks */,
+				62D671D91C0C4CBB00450BE9 /* libopencore-amrnb.a.arm64 in Frameworks */,
+				62D671DA1C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7 in Frameworks */,
+				62D671E31C0C4CBB00450BE9 /* libopencore-amrwb.a.x86_64 in Frameworks */,
+				62D671E11C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7s in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62A05CD317C36AEB005D5E5F = {
+			isa = PBXGroup;
+			children = (
+				62D6714B1C0C482900450BE9 /* readme.txt */,
+				62D6718F1C0C4CBB00450BE9 /* RecordingTranscoding */,
+				62A05D0617C36BC4005D5E5F /* AudioToolbox.framework */,
+				62A05D0417C36BBB005D5E5F /* AVFoundation.framework */,
+				62A05D0217C36BB3005D5E5F /* CoreAudio.framework */,
+				62A05CDE17C36AEB005D5E5F /* Frameworks */,
+				62A05CDD17C36AEB005D5E5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62A05CDD17C36AEB005D5E5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62A05CDC17C36AEB005D5E5F /* RecordingTranscoding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62A05CDE17C36AEB005D5E5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62A05CDF17C36AEB005D5E5F /* UIKit.framework */,
+				62A05CE117C36AEB005D5E5F /* Foundation.framework */,
+				62A05CE317C36AEB005D5E5F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62D6718F1C0C4CBB00450BE9 /* RecordingTranscoding */ = {
+			isa = PBXGroup;
+			children = (
+				62D671901C0C4CBB00450BE9 /* BlazeiceAppDelegate.h */,
+				62D671911C0C4CBB00450BE9 /* BlazeiceAppDelegate.m */,
+				62D671921C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.h */,
+				62D671931C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m */,
+				62D671941C0C4CBB00450BE9 /* BlazeicePublicMethod.h */,
+				62D671951C0C4CBB00450BE9 /* BlazeicePublicMethod.m */,
+				62D671961C0C4CBB00450BE9 /* BlazeiceViewController.h */,
+				62D671971C0C4CBB00450BE9 /* BlazeiceViewController.m */,
+				62CF03C51C0D7A71002C76D0 /* BlazeiceAudioRecordView.h */,
+				62CF03C61C0D7A71002C76D0 /* BlazeiceAudioRecordView.m */,
+				62D671E81C0C4CC900450BE9 /* Supporting Files */,
+				62D671A01C0C4CBB00450BE9 /* thirdpackage */,
+			);
+			path = RecordingTranscoding;
+			sourceTree = "<group>";
+		};
+		62D671A01C0C4CBB00450BE9 /* thirdpackage */ = {
+			isa = PBXGroup;
+			children = (
+				62D671A11C0C4CBB00450BE9 /* UIViewAnimation */,
+				62D671A41C0C4CBB00450BE9 /* voiceConvert */,
+			);
+			path = thirdpackage;
+			sourceTree = "<group>";
+		};
+		62D671A11C0C4CBB00450BE9 /* UIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				62D671A21C0C4CBB00450BE9 /* UIView+Animation.h */,
+				62D671A31C0C4CBB00450BE9 /* UIView+Animation.m */,
+			);
+			path = UIViewAnimation;
+			sourceTree = "<group>";
+		};
+		62D671A41C0C4CBB00450BE9 /* voiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				62D671A51C0C4CBB00450BE9 /* amrwapper */,
+				62D671AA1C0C4CBB00450BE9 /* include */,
+				62D671B11C0C4CBB00450BE9 /* lib */,
+				62D671C31C0C4CBB00450BE9 /* VoiceConverter.h */,
+				62D671C41C0C4CBB00450BE9 /* VoiceConverter.mm */,
+			);
+			path = voiceConvert;
+			sourceTree = "<group>";
+		};
+		62D671A51C0C4CBB00450BE9 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				62D671A61C0C4CBB00450BE9 /* amrFileCodec.h */,
+				62D671A71C0C4CBB00450BE9 /* amrFileCodec.mm */,
+				62D671A81C0C4CBB00450BE9 /* wav.h */,
+				62D671A91C0C4CBB00450BE9 /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		62D671AA1C0C4CBB00450BE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				62D671AB1C0C4CBB00450BE9 /* opencore-amrnb */,
+				62D671AE1C0C4CBB00450BE9 /* opencore-amrwb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		62D671AB1C0C4CBB00450BE9 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				62D671AC1C0C4CBB00450BE9 /* interf_dec.h */,
+				62D671AD1C0C4CBB00450BE9 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		62D671AE1C0C4CBB00450BE9 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				62D671AF1C0C4CBB00450BE9 /* dec_if.h */,
+				62D671B01C0C4CBB00450BE9 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		62D671B11C0C4CBB00450BE9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				62D671B21C0C4CBB00450BE9 /* libopencore-amrnb.a */,
+				62D671B31C0C4CBB00450BE9 /* libopencore-amrnb.a.arm64 */,
+				62D671B41C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7 */,
+				62D671B51C0C4CBB00450BE9 /* libopencore-amrnb.a.armv7s */,
+				62D671B61C0C4CBB00450BE9 /* libopencore-amrnb.a.i386 */,
+				62D671B71C0C4CBB00450BE9 /* libopencore-amrnb.a.x86_64 */,
+				62D671B81C0C4CBB00450BE9 /* libopencore-amrwb.a */,
+				62D671B91C0C4CBB00450BE9 /* libopencore-amrwb.a.arm64 */,
+				62D671BA1C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7 */,
+				62D671BB1C0C4CBB00450BE9 /* libopencore-amrwb.a.armv7s */,
+				62D671BC1C0C4CBB00450BE9 /* libopencore-amrwb.a.i386 */,
+				62D671BD1C0C4CBB00450BE9 /* libopencore-amrwb.a.x86_64 */,
+				62D671BE1C0C4CBB00450BE9 /* pkgconfig */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		62D671BE1C0C4CBB00450BE9 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				62D671BF1C0C4CBB00450BE9 /* opencore-amrnb.pc */,
+				62D671C01C0C4CBB00450BE9 /* opencore-amrwb.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		62D671E81C0C4CC900450BE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62D671981C0C4CBB00450BE9 /* Default-568h@2x.png */,
+				62D671991C0C4CBB00450BE9 /* Default.png */,
+				62D6719A1C0C4CBB00450BE9 /* Default@2x.png */,
+				62D6719B1C0C4CBB00450BE9 /* InfoPlist.strings */,
+				62D6719D1C0C4CBB00450BE9 /* main.m */,
+				62D6719E1C0C4CBB00450BE9 /* RecordingTranscoding-Info.plist */,
+				62D6719F1C0C4CBB00450BE9 /* RecordingTranscoding-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62A05CDB17C36AEB005D5E5F /* RecordingTranscoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62A05CFF17C36AEB005D5E5F /* Build configuration list for PBXNativeTarget "RecordingTranscoding" */;
+			buildPhases = (
+				62A05CD817C36AEB005D5E5F /* Sources */,
+				62A05CD917C36AEB005D5E5F /* Frameworks */,
+				62A05CDA17C36AEB005D5E5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordingTranscoding;
+			productName = lexueRead;
+			productReference = 62A05CDC17C36AEB005D5E5F /* RecordingTranscoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62A05CD417C36AEB005D5E5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LZX;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = lezhixing;
+				TargetAttributes = {
+					62A05CDB17C36AEB005D5E5F = {
+						DevelopmentTeam = VU6SYEBV9S;
+					};
+				};
+			};
+			buildConfigurationList = 62A05CD717C36AEB005D5E5F /* Build configuration list for PBXProject "RecordingTranscoding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 62A05CD317C36AEB005D5E5F;
+			productRefGroup = 62A05CDD17C36AEB005D5E5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62A05CDB17C36AEB005D5E5F /* RecordingTranscoding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62A05CDA17C36AEB005D5E5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D671D11C0C4CBB00450BE9 /* Default@2x.png in Resources */,
+				62D6714C1C0C482900450BE9 /* readme.txt in Resources */,
+				62D671D01C0C4CBB00450BE9 /* Default.png in Resources */,
+				62D671E51C0C4CBB00450BE9 /* opencore-amrwb.pc in Resources */,
+				62D671D41C0C4CBB00450BE9 /* RecordingTranscoding-Info.plist in Resources */,
+				62D671CF1C0C4CBB00450BE9 /* Default-568h@2x.png in Resources */,
+				62D671D21C0C4CBB00450BE9 /* InfoPlist.strings in Resources */,
+				62D671E41C0C4CBB00450BE9 /* opencore-amrnb.pc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62A05CD817C36AEB005D5E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D671D61C0C4CBB00450BE9 /* amrFileCodec.mm in Sources */,
+				62D671D31C0C4CBB00450BE9 /* main.m in Sources */,
+				62D671CB1C0C4CBB00450BE9 /* BlazeiceAppDelegate.m in Sources */,
+				62D671CE1C0C4CBB00450BE9 /* BlazeiceViewController.m in Sources */,
+				62D671E71C0C4CBB00450BE9 /* VoiceConverter.mm in Sources */,
+				62CF03C71C0D7A71002C76D0 /* BlazeiceAudioRecordView.m in Sources */,
+				62D671D71C0C4CBB00450BE9 /* wav.mm in Sources */,
+				62D671D51C0C4CBB00450BE9 /* UIView+Animation.m in Sources */,
+				62D671CD1C0C4CBB00450BE9 /* BlazeicePublicMethod.m in Sources */,
+				62D671CC1C0C4CBB00450BE9 /* BlazeiceAudioRecordAndTransCoding.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62D6719B1C0C4CBB00450BE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62D6719C1C0C4CBB00450BE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62A05CFD17C36AEB005D5E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		62A05CFE17C36AEB005D5E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62A05D0017C36AEB005D5E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/RecordingTranscoding/thirdparty";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecordingTranscoding/RecordingTranscoding-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "RecordingTranscoding/RecordingTranscoding-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RecordingTranscoding/thirdparty",
+					"$(PROJECT_DIR)/RecordingTranscoding/thirdpackage/voiceConvert/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lezhixing.fleaf;
+				PRODUCT_NAME = RecordingTranscoding;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		62A05D0117C36AEB005D5E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/RecordingTranscoding/thirdparty";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecordingTranscoding/RecordingTranscoding-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "RecordingTranscoding/RecordingTranscoding-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RecordingTranscoding/thirdparty",
+					"$(PROJECT_DIR)/RecordingTranscoding/thirdpackage/voiceConvert/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lezhixing.fleaf;
+				PRODUCT_NAME = RecordingTranscoding;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62A05CD717C36AEB005D5E5F /* Build configuration list for PBXProject "RecordingTranscoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62A05CFD17C36AEB005D5E5F /* Debug */,
+				62A05CFE17C36AEB005D5E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62A05CFF17C36AEB005D5E5F /* Build configuration list for PBXNativeTarget "RecordingTranscoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62A05D0017C36AEB005D5E5F /* Debug */,
+				62A05D0117C36AEB005D5E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62A05CD417C36AEB005D5E5F /* Project object */;
+}
